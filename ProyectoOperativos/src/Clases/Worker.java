@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 public class Worker {
         
       private int type;
+      private int part;
       private String name;
       private int dayDuration;
       private float salaryAcc;
@@ -25,7 +26,7 @@ public class Worker {
       private Semaphore mutex;
       private Drive drive;
       
-          public Worker (int type, String name, int dayDuration, int payPerHour, Semaphore m, Drive d) {
+        public Worker (int type, String name, int dayDuration, int payPerHour, Semaphore m, Drive d) {
         this.type = type;
         this.name = name;
         this.dayDuration = dayDuration;
@@ -35,10 +36,10 @@ public class Worker {
         this.productionPerDay = 0.34f;
         this.mutex = m;
         this.drive = d;
+        
     }
           
           
-      @Override
         public void run(){
             while(true){
                 
@@ -66,7 +67,7 @@ public class Worker {
                 this.acc = 0;
                 try {
                     this.mutex.acquire(); //wait
-                    this.drive.addToDrive(this.type);
+                    this.drive.addPart(this.type, this.part);
                     this.mutex.release(); // signal
                     
                     
