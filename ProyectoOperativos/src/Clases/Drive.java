@@ -12,11 +12,11 @@ import java.util.concurrent.Semaphore;
  */
 public class Drive {
     // Aqui como esto es area compartida los atributos son publicos creo
-    public int scripts;
-    public int scenarios;
-    public int animations;
-    public int dubbings;
-    public int plotTwist;
+    private int scripts;
+    private int scenarios;
+    private int animations;
+    private int dubbings;
+    private int plotTwist;
    
     private final int maxScripts = 25 ;
     private final int maxScenarios = 20;
@@ -40,6 +40,14 @@ public class Drive {
 
     private int daysleftToRelease;
 
+    //Costos de producir un episodio
+    private int scriptCost = 20;// no se si se inicializa en 20 (lo que cobra por hora) o si lo inicializo en 0
+    private int scenarioCost = 26;
+    private int animationsCost = 40;
+    private int dubbingsCost = 16;
+    private int plotTwistCost = 34;
+    private int PMcost = 40;
+    private int DirectorCost = 60; 
     
     
     public Drive(){
@@ -62,40 +70,40 @@ public class Drive {
         
         switch (type){
             case 0: 
-                if (scripts + part > maxScripts) {
-                 scripts = maxScripts; 
+                if (getScripts() + part > getMaxScripts()) {
+                 setScripts(getMaxScripts()); 
                 }
                 else{
-                scripts += part; 
+                setScripts(getScripts() + part); 
                 }
                 break;
                 
             case 1: 
-                if (scenarios + part > maxScenarios) {
-                 scenarios = maxScenarios; 
+                if (getScenarios() + part > getMaxScenarios()) {
+                 setScenarios(getMaxScenarios()); 
                 }else{
-                scenarios += part; 
+                setScenarios(getScenarios() + part); 
                 }
                 break;
             case 2: 
-                if (animations + part > maxAnimations) {
-                 animations = maxAnimations; }
+                if (getAnimations() + part > getMaxAnimations()) {
+                 setAnimations(getMaxAnimations()); }
                 else{
-                animations += part; 
+                setAnimations(getAnimations() + part); 
                 }
                 break;        
             case 3: 
-                if (dubbings + part > maxDubbings) {
-                 dubbings = maxDubbings; }
+                if (getDubbings() + part > getMaxDubbings()) {
+                 setDubbings(getMaxDubbings()); }
                 else{
-                dubbings += part; 
+                setDubbings(getDubbings() + part); 
                 }
                 break;        
             case 4: 
-                if (plotTwist + part > maxPlotTwist) {
-                 plotTwist = maxPlotTwist; }
+                if (getPlotTwist() + part > getMaxPlotTwist()) {
+                 setPlotTwist(getMaxPlotTwist()); }
                 else{
-                plotTwist += part; 
+                setPlotTwist(getPlotTwist() + part); 
                 }
                 break;   
             default:
@@ -202,6 +210,209 @@ public class Drive {
      */
     public void setDaysleftToRelease(int daysleftToRelease) {
         this.daysleftToRelease = daysleftToRelease;
+    }
+
+    /**
+     * @return the scripts
+     */
+    public int getScripts() {
+        return scripts;
+    }
+
+    /**
+     * @param scripts the scripts to set
+     */
+    public void setScripts(int scripts) {
+        this.scripts = scripts;
+    }
+
+    /**
+     * @return the scenarios
+     */
+    public int getScenarios() {
+        return scenarios;
+    }
+
+    /**
+     * @param scenarios the scenarios to set
+     */
+    public void setScenarios(int scenarios) {
+        this.scenarios = scenarios;
+    }
+
+    /**
+     * @return the animations
+     */
+    public int getAnimations() {
+        return animations;
+    }
+
+    /**
+     * @param animations the animations to set
+     */
+    public void setAnimations(int animations) {
+        this.animations = animations;
+    }
+
+    /**
+     * @return the dubbings
+     */
+    public int getDubbings() {
+        return dubbings;
+    }
+
+    /**
+     * @param dubbings the dubbings to set
+     */
+    public void setDubbings(int dubbings) {
+        this.dubbings = dubbings;
+    }
+
+    /**
+     * @return the plotTwist
+     */
+    public int getPlotTwist() {
+        return plotTwist;
+    }
+
+    /**
+     * @param plotTwist the plotTwist to set
+     */
+    public void setPlotTwist(int plotTwist) {
+        this.plotTwist = plotTwist;
+    }
+
+    /**
+     * @return the maxScripts
+     */
+    public int getMaxScripts() {
+        return maxScripts;
+    }
+
+    /**
+     * @return the maxScenarios
+     */
+    public int getMaxScenarios() {
+        return maxScenarios;
+    }
+
+    /**
+     * @return the maxAnimations
+     */
+    public int getMaxAnimations() {
+        return maxAnimations;
+    }
+
+    /**
+     * @return the maxDubbings
+     */
+    public int getMaxDubbings() {
+        return maxDubbings;
+    }
+
+    /**
+     * @return the maxPlotTwist
+     */
+    public int getMaxPlotTwist() {
+        return maxPlotTwist;
+    }
+
+    /**
+     * @return the scriptCost
+     */
+    public int getScriptCost() {
+        return scriptCost;
+    }
+
+    /**
+     * @param scriptCost the scriptCost to set
+     */
+    public void setScriptCost(int scriptCost) {
+        this.scriptCost = scriptCost;
+    }
+
+    /**
+     * @return the scenarioCost
+     */
+    public int getScenarioCost() {
+        return scenarioCost;
+    }
+
+    /**
+     * @param scenarioCost the scenarioCost to set
+     */
+    public void setScenarioCost(int scenarioCost) {
+        this.scenarioCost = scenarioCost;
+    }
+
+    /**
+     * @return the animationsCost
+     */
+    public int getAnimationsCost() {
+        return animationsCost;
+    }
+
+    /**
+     * @param animationsCost the animationsCost to set
+     */
+    public void setAnimationsCost(int animationsCost) {
+        this.animationsCost = animationsCost;
+    }
+
+    /**
+     * @return the dubbingsCost
+     */
+    public int getDubbingsCost() {
+        return dubbingsCost;
+    }
+
+    /**
+     * @param dubbingsCost the dubbingsCost to set
+     */
+    public void setDubbingsCost(int dubbingsCost) {
+        this.dubbingsCost = dubbingsCost;
+    }
+
+    /**
+     * @return the plotTwistCost
+     */
+    public int getPlotTwistCost() {
+        return plotTwistCost;
+    }
+
+    /**
+     * @param plotTwistCost the plotTwistCost to set
+     */
+    public void setPlotTwistCost(int plotTwistCost) {
+        this.plotTwistCost = plotTwistCost;
+    }
+
+    /**
+     * @return the PMcost
+     */
+    public int getPMcost() {
+        return PMcost;
+    }
+
+    /**
+     * @param PMcost the PMcost to set
+     */
+    public void setPMcost(int PMcost) {
+        this.PMcost = PMcost;
+    }
+
+    /**
+     * @return the DirectorCost
+     */
+    public int getDirectorCost() {
+        return DirectorCost;
+    }
+
+    /**
+     * @param DirectorCost the DirectorCost to set
+     */
+    public void setDirectorCost(int DirectorCost) {
+        this.DirectorCost = DirectorCost;
     }
 
     
