@@ -24,8 +24,22 @@ public class Drive {
     private final int maxDubbings = 35;
     private final int maxPlotTwist = 10; 
     
-    //Semaphores
     
+    //Los estados del director y PM se van a expresar de manera binaria
+    //0- esta trabajando 1- esta vigilando
+    private int directorStatus = 0;
+    // 0- esta trabajando 1-esta viendo anime
+    private int PMStatus = 0;
+    
+    private int salaryDiscount = 0;
+    private int faltas = 0;
+    
+    //Semaphores
+    private Semaphore daysMutex = new Semaphore(1);
+    private Semaphore costMutex = new Semaphore(1);
+
+    private int daysleftToRelease;
+
     
     
     public Drive(){
@@ -89,5 +103,107 @@ public class Drive {
                 
              }
     }   
+    /**
+     * @return the directorStatus
+     */
+    public int getDirectorStatus() {
+        return directorStatus;
+    }
+
+    /**
+     * @param directorStatus the directorStatus to set
+     */
+    public void setDirectorStatus(int directorStatus) {
+        this.directorStatus = directorStatus;
+    }
+
+    /**
+     * @return the PMStatus
+     */
+    public int getPMStatus() {
+        return PMStatus;
+    }
+
+    /**
+     * @param PMStatus the PMStatus to set
+     */
+    public void setPMStatus(int PMStatus) {
+        this.PMStatus = PMStatus;
+    }
+
+    /**
+     * @return the salaryDiscount
+     */
+    public int getSalaryDiscount() {
+        return salaryDiscount;
+    }
+
+    /**
+     * @param salaryDiscount the salaryDiscount to set
+     */
+    public void setSalaryDiscount(int salaryDiscount) {
+        this.salaryDiscount = salaryDiscount;
+    }
+
+    /**
+     * @return the faltas
+     */
+    public int getFaltas() {
+        return faltas;
+    }
+
+    /**
+     * @param faltas the faltas to set
+     */
+    public void setFaltas(int faltas) {
+        this.faltas = faltas;
+    }
+
+    /**
+     * @return the daysMutex
+     */
+    public Semaphore getDaysMutex() {
+        return daysMutex;
+    }
+
+    /**
+     * @param daysMutex the daysMutex to set
+     */
+    public void setDaysMutex(Semaphore daysMutex) {
+        this.daysMutex = daysMutex;
+    }
+
+    /**
+     * @return the costMutex
+     */
+    public Semaphore getCostMutex() {
+        return costMutex;
+    }
+
+    /**
+     * @param costMutex the costMutex to set
+     */
+    public void setCostMutex(Semaphore costMutex) {
+        this.costMutex = costMutex;
+    }
+
+    /**
+     * @return the daysleftToRelease
+     */
+    public int getDaysleftToRelease() {
+        return daysleftToRelease;
+    }
+
+    /**
+     * @param daysleftToRelease the daysleftToRelease to set
+     */
+    public void setDaysleftToRelease(int daysleftToRelease) {
+        this.daysleftToRelease = daysleftToRelease;
+    }
+
+    
+
+ 
+
     
 }

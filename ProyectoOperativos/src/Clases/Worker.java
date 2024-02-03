@@ -18,13 +18,13 @@ public class Worker {
       private int type;
       private int part;
       private String name;
-      private int dayDuration;
+      public int dayDuration;
       private float salaryAcc;
       private int payPerHour;
       private float acc;
       private float productionPerDay;
       private Semaphore mutex;
-      private Drive drive;
+      Drive drive;
       
         public Worker (int type, String name, int dayDuration, int payPerHour, Semaphore m, Drive d) {
         this.type = type;
