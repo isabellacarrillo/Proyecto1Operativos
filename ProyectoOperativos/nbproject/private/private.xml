@@ -3,18 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/simon/OneDrive/Documentos/Simon%20Folder/Trimestre%2014/SO/Proyecto1Operativos/ProyectoOperativos/src/Clases/Drive.java</file>
-            <file>file:/C:/Users/simon/OneDrive/Documentos/Simon%20Folder/Trimestre%2014/SO/Proyecto1Operativos/ProyectoOperativos/src/Clases/Worker.java</file>
-=======
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Interfaces/EditData.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Primitivas/Node.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Clases/Trabajador.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Clases/Director.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Clases/ProjectManager.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Interfaces/Nickelodeon.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Clases/Drive.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Primitivas/List.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/Interfaces/InterfazMain.java</file>
->>>>>>> f311f5c6537d69cd7f9587516037b37a43de9de0
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/Proyecto%201%20Operativos/ProyectoOperativos/src/main/ProyectoOperativos.java</file>
         </group>
     </open-files>
 </project-private>

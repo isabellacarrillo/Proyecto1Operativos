@@ -26,12 +26,19 @@ public class Director extends Worker {
             double clock;
             try{
                 drive.getDaysMutex().acquire();
+                //Esto es cuando el contador marca O días restantes y todo lo que abarca cuando eso pasa
                 if (drive.getDaysleftToRelease() == 0){
                     
+                    
                 }else{
+                    //Esto es lo que hace el director en días que no tiene que release
                     drive.getDaysMutex().release();
+                    
                     //Tenemos que incluir el director en un momento aleatorio del día yendo a chequear al PM
                     Random random = new Random();
+                    double hour = getDayDuration()/24; //esto me da el valor de una hora
+                    
+                    
                     
                     
                 }

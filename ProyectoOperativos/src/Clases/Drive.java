@@ -35,19 +35,24 @@ public class Drive {
     private int faltas = 0;
     
     //Semaphores
+    
     private Semaphore daysMutex = new Semaphore(1);
     private Semaphore costMutex = new Semaphore(1);
 
     private int daysleftToRelease;
 
     //Costos de producir un episodio
-    private int scriptCost = 20;// no se si se inicializa en 20 (lo que cobra por hora) o si lo inicializo en 0
-    private int scenarioCost = 26;
-    private int animationsCost = 40;
-    private int dubbingsCost = 16;
-    private int plotTwistCost = 34;
-    private int PMcost = 40;
-    private int DirectorCost = 60; 
+    private float scriptCost = 20;// no se si se inicializa en 20 (lo que cobra por hora) o si lo inicializo en 0
+    private float scenarioCost = 26;
+    private float animationsCost = 40;
+    private float dubbingsCost = 16;
+    private float plotTwistCost = 34;
+    private float PMcost = 40;
+    private float DirectorCost = 60; 
+    
+    private float winnings = 0;
+    private float totalCosts = 0;
+    private float utility = 0;
     
     
     public Drive(){
@@ -317,7 +322,7 @@ public class Drive {
     /**
      * @return the scriptCost
      */
-    public int getScriptCost() {
+    public float getScriptCost() {
         return scriptCost;
     }
 
@@ -331,7 +336,7 @@ public class Drive {
     /**
      * @return the scenarioCost
      */
-    public int getScenarioCost() {
+    public float getScenarioCost() {
         return scenarioCost;
     }
 
@@ -345,7 +350,7 @@ public class Drive {
     /**
      * @return the animationsCost
      */
-    public int getAnimationsCost() {
+    public float getAnimationsCost() {
         return animationsCost;
     }
 
@@ -359,7 +364,7 @@ public class Drive {
     /**
      * @return the dubbingsCost
      */
-    public int getDubbingsCost() {
+    public float getDubbingsCost() {
         return dubbingsCost;
     }
 
@@ -373,7 +378,7 @@ public class Drive {
     /**
      * @return the plotTwistCost
      */
-    public int getPlotTwistCost() {
+    public float getPlotTwistCost() {
         return plotTwistCost;
     }
 
@@ -387,7 +392,7 @@ public class Drive {
     /**
      * @return the PMcost
      */
-    public int getPMcost() {
+    public float getPMcost() {
         return PMcost;
     }
 
@@ -401,7 +406,7 @@ public class Drive {
     /**
      * @return the DirectorCost
      */
-    public int getDirectorCost() {
+    public float getDirectorCost() {
         return DirectorCost;
     }
 
@@ -410,6 +415,48 @@ public class Drive {
      */
     public void setDirectorCost(int DirectorCost) {
         this.DirectorCost = DirectorCost;
+    }
+
+    /**
+     * @return the winnings
+     */
+    public float getWinnings() {
+        return winnings;
+    }
+
+    /**
+     * @param winnings the winnings to set
+     */
+    public void setWinnings(float winnings) {
+        this.winnings = winnings;
+    }
+
+    /**
+     * @return the totalCosts
+     */
+    public float getTotalCosts() {
+        return totalCosts;
+    }
+
+    /**
+     * @param totalCosts the totalCosts to set
+     */
+    public void setTotalCosts(float totalCosts) {
+        this.totalCosts = totalCosts;
+    }
+
+    /**
+     * @return the utility
+     */
+    public float getUtility() {
+        return utility;
+    }
+
+    /**
+     * @param utility the utility to set
+     */
+    public void setUtility(float utility) {
+        this.utility = utility;
     }
 
     
