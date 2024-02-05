@@ -24,6 +24,9 @@ public class Drive {
     private final int maxDubbings = 35;
     private final int maxPlotTwist = 10; 
     
+    private int episodes;
+    private int episodesWithPT;
+    
     
     //Los estados del director y PM se van a expresar de manera binaria
     //0- esta trabajando 1- esta vigilando
@@ -36,8 +39,10 @@ public class Drive {
     
     //Semaphores
     
-    private Semaphore daysMutex = new Semaphore(1);
-    private Semaphore costMutex = new Semaphore(1);
+    private Semaphore daysMutex = new Semaphore(1); // para controlar el paso del tiempo
+    private Semaphore costMutex = new Semaphore(1); // asociado a costos
+    private Semaphore workerMutex = new Semaphore(1); // asociado a los cambios que van a hacer los trabajadores
+    
 
     private int daysleftToRelease;
 
@@ -115,7 +120,19 @@ public class Drive {
             break;
                 
              }
-    }   
+    }  
+    
+     public void makeEpisode(String studio){
+        switch(studio){
+            case "Nickelodeon":
+                if ((getScripts() >= 2)&& (getDubbings()>=4) && (getScenarios()>= 1)&&(getAnimations()>=4)){
+                }
+                
+        }
+        
+        
+    }
+    
     /**
      * @return the directorStatus
      */
@@ -457,6 +474,48 @@ public class Drive {
      */
     public void setUtility(float utility) {
         this.utility = utility;
+    }
+
+    /**
+     * @return the workerMutex
+     */
+    public Semaphore getWorkerMutex() {
+        return workerMutex;
+    }
+
+    /**
+     * @param workerMutex the workerMutex to set
+     */
+    public void setWorkerMutex(Semaphore workerMutex) {
+        this.workerMutex = workerMutex;
+    }
+
+    /**
+     * @return the episodes
+     */
+    public int getEpisodes() {
+        return episodes;
+    }
+
+    /**
+     * @param episodes the episodes to set
+     */
+    public void setEpisodes(int episodes) {
+        this.episodes = episodes;
+    }
+
+    /**
+     * @return the episodesWithPT
+     */
+    public int getEpisodesWithPT() {
+        return episodesWithPT;
+    }
+
+    /**
+     * @param episodesWithPT the episodesWithPT to set
+     */
+    public void setEpisodesWithPT(int episodesWithPT) {
+        this.episodesWithPT = episodesWithPT;
     }
 
     
