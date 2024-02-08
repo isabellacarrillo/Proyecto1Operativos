@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Interfaces;
-
 /**
  *
  * @author simon
@@ -252,14 +251,17 @@ public class DashBoard extends javax.swing.JFrame {
         home.add(TotalWorkersNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 460, -1, -1));
 
         GuionistaStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        GuionistaStar.setForeground(new java.awt.Color(255, 255, 255));
         GuionistaStar.setText("Guionista");
         home.add(GuionistaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
 
         EscenariosStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        EscenariosStar.setForeground(new java.awt.Color(255, 255, 255));
         EscenariosStar.setText("Escenario");
         home.add(EscenariosStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
 
         AnimadorStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        AnimadorStar.setForeground(new java.awt.Color(255, 255, 255));
         AnimadorStar.setText("Animador");
         home.add(AnimadorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
 

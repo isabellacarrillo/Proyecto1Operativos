@@ -16,19 +16,18 @@ public class ProjectManager extends Worker {
     private boolean working;
     private int registerDayAccount;
     private Drive drive;
-    
-    
-    public ProjectManager(int type, String name, int dayDuration, int payPerHour, Semaphore m, Drive d) {
-        super(type, name, dayDuration, payPerHour, m, d);
-        this.working = true;
-        this.registerDayAccount = 0;
+
+    public ProjectManager(int wage, String rol, float production, long duracion, Company empresa) {
+        super(wage, rol, production, duracion, empresa);
     }
+    
+   
 
    public void run() {
        
        while (working){
            try{
-               double halfhour = getDayDuration()/ 48;
+               double halfhour = this.dia/ 48;
                int counter = 0;
                
                // este es el espacio de tiempo en el que el PM ve media hora anime y trabaja media hora
@@ -59,7 +58,8 @@ public class ProjectManager extends Worker {
                
                
                drive.getCostMutex().acquire();
-               drive.setPMcost(drive.getPMcost() + getPayPerHour()*24);
+               
+               drive.setPMcost(drive.getPMcost() + this.wage*24);
                drive.getCostMutex().release();
                
            }

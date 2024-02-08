@@ -3,289 +3,168 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Clases;
+import Interfaces.DashBoard;
 /**
  *
  * @author Admin
  */
 
 public class Studio {
-    //partes necesarias para hacer un episodio
-  
-    
-    private float incomeFromEpisode;
-    private float incomeFromEpisodePT;
-    private int employees;
-    
-    private int scriptCosts = 20;
-    private int scenarioCosts = 26;
-    private int animationsCosts = 40;
-    private int dubbingsCosts = 16;
-    private int plotTwistCosts = 34;
-    private int ensambladoresCosts = 50;
-    private int PMcosts = 40;
-    private int DirectorCosts = 60; 
-    
-    
-    private float scriptsPerDay;
-    private float animationsPerDay;
-    private float scenariosPerDay;
-    private float dubbingsPerDay;
-    private float plotTwistsPerDay;
-    private float episodesPerDay;
-    
-    
-    public boolean canNickReleaseEpisode (int scripts,int scenarios, int dubbings, int animations ){
-          return (scripts>= 2 && scenarios >= 1 && dubbings>= 4 && animations>= 4);
-    }
-     public boolean canNickReleaseEpisodePlotTwist (int scripts,int scenarios, int dubbings, int animations, int plotTwists ){
-          return (scripts>= 2 && scenarios >= 1 && dubbings>= 4 && animations>= 4 && plotTwists >= 2);
-    }
-       public boolean canStarReleaseEpisode (int scripts,int scenarios, int dubbings, int animations ){
-          return (scripts>= 2 && scenarios >= 3 && dubbings>= 6 && animations>= 4);
-    }
-        public boolean canStarReleaseEpisodePlotTwist (int scripts,int scenarios, int dubbings, int animations, int plotTwists ){
-          return (scripts>= 2 && scenarios >= 3 && dubbings>= 6 && animations>= 4 && plotTwists >= 5);
+     public int guiones, escenarios, animadores, doblajes, plotTwists, normalEpisodes, PTepisode;
+    public int maxGuiones, maxEscenarios, maxAnimadores, maxDoblajes, maxPT;
+    DashBoard gui;
+    public long ingreso;
+
+    public Studio(int maxGuiones, int maxEscenarios, int maxAnimadores, int maxDoblajes, int maxPT, DashBoard gui){
+        this.guiones = 0;
+        this.escenarios = 0;
+        this.animadores = 0;
+        this.doblajes = 0;
+        this.plotTwists = 0;
+
+        this.maxGuiones = maxGuiones;
+        this.maxEscenarios = maxEscenarios;
+        this.maxAnimadores = maxAnimadores;
+        this.maxDoblajes = maxDoblajes;
+        this.maxPT = maxPT;
+        
+        this.normalEpisodes = 0; 
+        this.PTepisode = 0;
+        this.ingreso = 0;
+        
+        this.gui = gui; 
     }
 
-    /**
-     * @return the incomeFromEpisode
-     */
-    public float getIncomeFromEpisode() {
-        return incomeFromEpisode;
-    }
+    public void addParts(String rol, int qty, String empresa){
+        switch(rol){
+            
+            case "guionistas":
 
-    /**
-     * @param incomeFromEpisode the incomeFromEpisode to set
-     */
-    public void setIncomeFromEpisode(float incomeFromEpisode) {
-        this.incomeFromEpisode = incomeFromEpisode;
-    }
+                if (this.guiones < this.maxGuiones){
+                    this.guiones += qty;
+                    System.out.println(empresa + " guiones: " + this.guiones);
+                }
+                break;
 
-    /**
-     * @return the incomeFromEpisodePT
-     */
-    public float getIncomeFromEpisodePT() {
-        return incomeFromEpisodePT;
-    }
+            case "escenarios":
 
-    /**
-     * @param incomeFromEpisodePT the incomeFromEpisodePT to set
-     */
-    public void setIncomeFromEpisodePT(float incomeFromEpisodePT) {
-        this.incomeFromEpisodePT = incomeFromEpisodePT;
-    }
+                if (this.escenarios < this.maxEscenarios){
+                    this.escenarios += qty;
+                    System.out.println(empresa + " escenarios: " + this.escenarios);
+                }
+                break;
 
-    /**
-     * @return the employees
-     */
-    public int getEmployees() {
-        return employees;
-    }
+            case "animadores":
 
-    /**
-     * @param employees the employees to set
-     */
-    public void setEmployees(int employees) {
-        this.employees = employees;
-    }
+                if (this.animadores < this.maxAnimadores){
+                    this.animadores += qty;
+                    System.out.println(empresa + " animadores: " + this.animadores);
+                }
+                break;
 
-    /**
-     * @return the scriptCosts
-     */
-    public int getScriptCosts() {
-        return scriptCosts;
-    }
+            case "doblajes":
 
-    /**
-     * @param scriptCosts the scriptCosts to set
-     */
-    public void setScriptCosts(int scriptCosts) {
-        this.scriptCosts = scriptCosts;
-    }
+                if (this.doblajes < this.maxDoblajes){
+                    this.doblajes += qty;
+                    System.out.println(empresa + " doblajes: " + this.doblajes);
+                }
+                break;
 
-    /**
-     * @return the scenarioCosts
-     */
-    public int getScenarioCosts() {
-        return scenarioCosts;
-    }
+            case "PlotTwists":
 
-    /**
-     * @param scenarioCosts the scenarioCosts to set
-     */
-    public void setScenarioCosts(int scenarioCosts) {
-        this.scenarioCosts = scenarioCosts;
-    }
-
-    /**
-     * @return the animationsCosts
-     */
-    public int getAnimationsCosts() {
-        return animationsCosts;
-    }
-
-    /**
-     * @param animationsCosts the animationsCosts to set
-     */
-    public void setAnimationsCosts(int animationsCosts) {
-        this.animationsCosts = animationsCosts;
-    }
-
-    /**
-     * @return the dubbingsCosts
-     */
-    public int getDubbingsCosts() {
-        return dubbingsCosts;
-    }
-
-    /**
-     * @param dubbingsCosts the dubbingsCosts to set
-     */
-    public void setDubbingsCosts(int dubbingsCosts) {
-        this.dubbingsCosts = dubbingsCosts;
-    }
-
-    /**
-     * @return the plotTwistCosts
-     */
-    public int getPlotTwistCosts() {
-        return plotTwistCosts;
-    }
-
-    /**
-     * @param plotTwistCosts the plotTwistCosts to set
-     */
-    public void setPlotTwistCosts(int plotTwistCosts) {
-        this.plotTwistCosts = plotTwistCosts;
-    }
-
-    /**
-     * @return the PMcosts
-     */
-    public int getPMcosts() {
-        return PMcosts;
-    }
-
-    /**
-     * @param PMcosts the PMcosts to set
-     */
-    public void setPMcosts(int PMcosts) {
-        this.PMcosts = PMcosts;
-    }
-
-    /**
-     * @return the DirectorCosts
-     */
-    public int getDirectorCosts() {
-        return DirectorCosts;
-    }
-
-    /**
-     * @param DirectorCosts the DirectorCosts to set
-     */
-    public void setDirectorCosts(int DirectorCosts) {
-        this.DirectorCosts = DirectorCosts;
-    }
-
-    /**
-     * @return the scriptsPerDay
-     */
-    public float getScriptsPerDay() {
-        return scriptsPerDay;
-    }
-
-    /**
-     * @param scriptsPerDay the scriptsPerDay to set
-     */
-    public void setScriptsPerDay(float scriptsPerDay) {
-        this.scriptsPerDay = scriptsPerDay;
-    }
-
-    /**
-     * @return the animationsPerDay
-     */
-    public float getAnimationsPerDay() {
-        return animationsPerDay;
-    }
-
-    /**
-     * @param animationsPerDay the animationsPerDay to set
-     */
-    public void setAnimationsPerDay(float animationsPerDay) {
-        this.animationsPerDay = animationsPerDay;
-    }
-
-    /**
-     * @return the scenariosPerDay
-     */
-    public float getScenariosPerDay() {
-        return scenariosPerDay;
-    }
-
-    /**
-     * @param scenariosPerDay the scenariosPerDay to set
-     */
-    public void setScenariosPerDay(float scenariosPerDay) {
-        this.scenariosPerDay = scenariosPerDay;
-    }
-
-    /**
-     * @return the dubbingsPerDay
-     */
-    public float getDubbingsPerDay() {
-        return dubbingsPerDay;
-    }
-
-    /**
-     * @param dubbingsPerDay the dubbingsPerDay to set
-     */
-    public void setDubbingsPerDay(float dubbingsPerDay) {
-        this.dubbingsPerDay = dubbingsPerDay;
-    }
-
-    /**
-     * @return the plotTwistsPerDay
-     */
-    public float getPlotTwistsPerDay() {
-        return plotTwistsPerDay;
-    }
-
-    /**
-     * @param plotTwistsPerDay the plotTwistsPerDay to set
-     */
-    public void setPlotTwistsPerDay(float plotTwistsPerDay) {
-        this.plotTwistsPerDay = plotTwistsPerDay;
-    }
-
-    /**
-     * @return the ensambladoresCosts
-     */
-    public int getEnsambladoresCosts() {
-        return ensambladoresCosts;
-    }
-
-    /**
-     * @param ensambladoresCosts the ensambladoresCosts to set
-     */
-    public void setEnsambladoresCosts(int ensambladoresCosts) {
-        this.ensambladoresCosts = ensambladoresCosts;
-    }
-
-    /**
-     * @return the episodesPerDay
-     */
-    public float getEpisodesPerDay() {
-        return episodesPerDay;
-    }
-
-    /**
-     * @param episodesPerDay the episodesPerDay to set
-     */
-    public void setEpisodesPerDay(float episodesPerDay) {
-        this.episodesPerDay = episodesPerDay;
+                if (this.plotTwists < this.maxPT){
+                    this.plotTwists += qty;
+                    System.out.println(empresa + " PlotTwists: " + this.plotTwists);
+                }
+                break;
+                
+            case "ensambladores":
+                switch(empresa){
+                    case "Nickelodeon":
+                        if((this.escenarios>=1) && (this.guiones>=2) && (this.animadores>=4) && (this.doblajes>=4)){
+                            if(this.normalEpisodes == (this.PTepisode*6)){
+                                this.normalEpisodes += qty;
+                                deleteParts(empresa, false);
+                                System.out.println(empresa + "Capítulos estándar: " + this.normalEpisodes);
+                            }else if((this.normalEpisodes % 5 == 0)){
+                                if(this.plotTwists>=2){
+                                    this.PTepisode += qty;
+                                    deleteParts(empresa, true);
+                                    System.out.println("Capítulos con Plot Twist: " + this.PTepisode);
+                                }
+                            }else{
+                                this.normalEpisodes += qty;
+                                deleteParts(empresa, false);
+                                System.out.println(empresa + " Capítulo estándar: " + this.normalEpisodes);
+                            }
+                        }
+                        break;
+                        
+                    case "Star Channel":
+                        if((this.escenarios>=3) && (this.guiones>=2) && (this.animadores>=4) && (this.doblajes>=6)){
+                            if(this.normalEpisodes == (this.PTepisode*3)){
+                                this.normalEpisodes += qty;
+                                deleteParts(empresa, false);
+                                System.out.println(empresa + "Capítulos estándar: " + this.normalEpisodes);
+                            }else if((this.normalEpisodes % 3 == 0)){
+                                if(this.plotTwists>=5){
+                                    this.PTepisode += qty;
+                                    deleteParts(empresa, true);
+                                    System.out.println("Capítulos con PlotTwist: " + this.PTepisode);
+                                }
+                            }else{
+                                this.normalEpisodes += qty;
+                                deleteParts(empresa, false);
+                                System.out.println(empresa + "Capítulos estándar: " + this.normalEpisodes);
+                            }
+                        }
+                        break;
+                }
+                break;
+        }
+        gui.updateValues();
     }
     
+    public void deleteParts(String empresa, boolean withPT){
+        switch(empresa){
+            case "Nickelodeon":
+                this.guiones -= 2;
+                this.escenarios-=1;
+                this.animadores -= 4;
+                this.doblajes -= 4;
+                
+                if(withPT){
+                    this.plotTwists -= 2;
+                }
+                break;
+                
+            case "Star Channel":
+                this.guiones -=2;
+                this.escenarios -=3;
+                this.animadores -= 4;
+                this.doblajes -= 6;
+                
+                if(withPT){
+                    this.plotTwists-=5;
+                }
+                break;
+        }
+    }
     
-  
-    
+        public void distribucion(String empresaNombre){
+        
+        switch(empresaNombre){
+            case "Nickelodeon":
+                this.ingreso += (this.PTepisode*500000) + (this.normalEpisodes*450000);
+                break;
+                
+            case "StarChannel":
+                this.ingreso += (this.PTepisode*800000) + (this.normalEpisodes*350000);
+                break;
+        }
+        this.gui.actualizarIngreso(this.ingreso, empresaNombre);
+        this.gui.actualizarProfit();
+        this.PTepisode = 0;
+        this.normalEpisodes = 0;
+    }
 }
