@@ -31,7 +31,7 @@ import java.lang.System.Logger.Level;
         this.wage = wage;
         this.empresa = empresa;
         this.dia = dia;
-        this.tiempo35min = (25/1440)*dia;
+        this.tiempo35min = (35/1440)*dia;
         this.savings = 0;
         this.vigila = false;
         this.administrativo = true;
@@ -96,5 +96,4 @@ import java.lang.System.Logger.Level;
     }
     
     
-
 }
