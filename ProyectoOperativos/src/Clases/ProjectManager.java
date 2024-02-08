@@ -6,68 +6,78 @@ package Clases;
 
 import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
+import Interfaces.DashBoard;
 
 /**
  *
  * @author simon
  */
-public class ProjectManager extends Worker {
-    
-    private boolean working;
-    private int registerDayAccount;
-    private Drive drive;
 
-    public ProjectManager(int wage, String rol, float production, long duracion, Company empresa) {
-        super(wage, rol, production, duracion, empresa);
+
+public class ProjectManager extends Thread {
+    private int wage;
+    private int qtyfaltas;
+    private int descontado;
+    private long savings;
+    private long dia;
+    private long tiempo30min;
+    private boolean anime;
+    private Company empresa;
+    DashBoard gui;
+
+    public ProjectManager(int wage, long dia, Company empresa, DashBoard gui){
+        this.wage = wage; 
+        this.dia = dia;
+        this.empresa = empresa;
+        this.tiempo30min = (dia/48);
+        this.savings = 0;
+        this.descontado = 0;
+        this.qtyfaltas = 0;
+        this.anime = false; 
+        this.gui = gui;
     }
     
-   
-
-   public void run() {
-       
-       while (working){
-           try{
-               double halfhour = this.dia/ 48;
-               int counter = 0;
-               
-               // este es el espacio de tiempo en el que el PM ve media hora anime y trabaja media hora
-               while (counter < 16){
-                   
-                   drive.setPMStatus(0);
-                   
-                   if (drive.getDirectorStatus() == 1){ // Cuando el director esta vigilando
-                       drive.setFaults( drive.getFaults() + 1);
-                       
-                       
-                       drive.getCostMutex().acquire();
-                       drive.setPMcost(drive.getPMcost()-100);
-                       drive.getCostMutex().release();
-                   }
-                   
-                   sleep(Math.round(halfhour));
-                   drive.setPMStatus(1);
-                   sleep(Math.round(halfhour));
-                   counter++;     
-               
-               }
-               drive.setPMStatus(0);
-               sleep(Math.round(halfhour*16));
-               drive.getDaysMutex().acquire();
-               drive.setDaysleftToRelease(drive.getDaysleftToRelease()-1);
-               drive.getDaysMutex().release();
-               
-               
-               drive.getCostMutex().acquire();
-               
-               drive.setPMcost(drive.getPMcost() + this.wage*24);
-               drive.getCostMutex().release();
-               
-           }
-           catch(Exception e){}
-       }
-   }
-  
- 
+    @Override 
+    public void run(){
+        while(true){
+            try{
+                for(int gui=0; gui<16; gui++){
+                    sleep(this.tiempo30min);
+                    this.anime = true;
+                    
+                    this.gui.estadoPM(this.anime, this.empresa);
+                    sleep(this.tiempo30min);             
+                    this.anime = false;
+                    this.gui.estadoPM(this.anime, this.empresa);
+                }
+                sleep(this.dia - (this.tiempo30min * 32));
+                this.savings += this.wage;
+                System.out.println(empresa.name + "   " + empresa.deadline);
+                proceso();
+            }
+            catch(Exception e){
+            }
+        }
+    }
+    
+    public void proceso(){
+        empresa.deadline--;
+        this.gui.actualizarCostos();
+        
+        this.gui.actualizarDeadline(empresa.deadline);
+    }
+    
+    public boolean vigilado(boolean director){
+        if(this.anime){
+            this.qtyfaltas++;
+            this.descontado+=50;
+            this.savings -= 50;
+            this.gui.atrapado(this.empresa, this.qtyfaltas, this.descontado);
+            return true;
+            
+        }else{
+            return false;
+        }
+    }
     
     
-}

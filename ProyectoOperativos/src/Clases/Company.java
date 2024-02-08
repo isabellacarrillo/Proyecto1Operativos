@@ -12,7 +12,7 @@ import Interfaces.DashBoard;
  */
 public class Company {
     public String name;
-    public int diasEntrega, diasRestantes;
+    public int diasEntrega, deadline;
     private int maxWorkers, guiones, escenarios, animadores, doblajes, PlotTwists, ensambladores;
     public Worker[] workers;
     public Studio estudio;
@@ -23,8 +23,8 @@ public class Company {
     public Company(String name, int duracionDia, int dias, int guiones, int escenarios, int animadores, int doblajes, int PlotTwists, int ensambladores, DashBoard gui){
         this.name = name;
         this.diasEntrega = dias;
-        this.diasRestantes = dias;
-        this.workers = new Worker[12];
+        this.deadline = dias;
+        this.workers = new Worker[17];
         
         this.estudio = new Studio(25, 20, 55, 35, 10, gui);
         this.mutex = new Semaphore(1);
