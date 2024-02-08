@@ -26,21 +26,993 @@ public class DashBoard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        DashBoard = new javax.swing.JTabbedPane();
+        home = new javax.swing.JPanel();
+        Title = new javax.swing.JLabel();
+        nickLogo = new javax.swing.JLabel();
+        starLogo = new javax.swing.JLabel();
+        labelTextWorkers = new javax.swing.JLabel();
+        labelTextWorkers1 = new javax.swing.JLabel();
+        GuionistaNick = new javax.swing.JLabel();
+        EscenariosNick = new javax.swing.JLabel();
+        AnimadorNick = new javax.swing.JLabel();
+        DoblajeNick = new javax.swing.JLabel();
+        PlotTwistNick = new javax.swing.JLabel();
+        EnsambladorNick = new javax.swing.JLabel();
+        TotalWorkersNick = new javax.swing.JLabel();
+        GuionistaStar = new javax.swing.JLabel();
+        EscenariosStar = new javax.swing.JLabel();
+        AnimadorStar = new javax.swing.JLabel();
+        DoblajeStar = new javax.swing.JLabel();
+        PlotTwistStar = new javax.swing.JLabel();
+        EnsambladorStar = new javax.swing.JLabel();
+        TotalWorkersStar = new javax.swing.JLabel();
+        GuionistaSpinnerNick = new javax.swing.JSpinner();
+        AnimadorSpinnerNick = new javax.swing.JSpinner();
+        DoblajeSpinnerNick = new javax.swing.JSpinner();
+        PlotTwistSpinnerNick = new javax.swing.JSpinner();
+        EscenarioSpinnerNick = new javax.swing.JSpinner();
+        valueTotalNick = new javax.swing.JLabel();
+        EscensarioSpinnerNick = new javax.swing.JSpinner();
+        GuionistaSpinnerStar = new javax.swing.JSpinner();
+        EscenarioSpinnerStar = new javax.swing.JSpinner();
+        AnimadorSpinnerStar = new javax.swing.JSpinner();
+        DoblajeSpinnerStar = new javax.swing.JSpinner();
+        PlotTwistSpinnerStar = new javax.swing.JSpinner();
+        EnsambladorSpinnerStar = new javax.swing.JSpinner();
+        valueTotalStar = new javax.swing.JLabel();
+        DeadlineValue = new javax.swing.JTextField();
+        Deadline = new javax.swing.JLabel();
+        DayDuration = new javax.swing.JLabel();
+        DayDurationValue = new javax.swing.JTextField();
+        nickelodeon = new javax.swing.JPanel();
+        Title1 = new javax.swing.JLabel();
+        TextWorker = new javax.swing.JLabel();
+        daysLeftTo = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        TextDirector = new javax.swing.JLabel();
+        TextPM = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        statusPMNick = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        statusDirectorNick = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        menosGuionistabuttNick = new javax.swing.JButton();
+        menosAnimadorbuttNick = new javax.swing.JButton();
+        menosDoblajebuttNick = new javax.swing.JButton();
+        menosPlotTwistButtNick = new javax.swing.JButton();
+        menosEsambladoresButtNick = new javax.swing.JButton();
+        menosEscenariobuttNick = new javax.swing.JButton();
+        valueWorkerEscenarioNick = new javax.swing.JLabel();
+        valueworkerAnimadorNick = new javax.swing.JLabel();
+        valueWorkerDoblajeNick = new javax.swing.JLabel();
+        valueWorkerPlottwistNick = new javax.swing.JLabel();
+        valueWorkerEnsambladorNick = new javax.swing.JLabel();
+        valueWorkerGuionistaNick = new javax.swing.JLabel();
+        addEscenarioNick = new javax.swing.JButton();
+        addAnimadorNick = new javax.swing.JButton();
+        addDoblajeNick = new javax.swing.JButton();
+        addPlotTwistNick = new javax.swing.JButton();
+        addEnsambladorNick = new javax.swing.JButton();
+        addGuionistaNick = new javax.swing.JButton();
+        daysLeftTo1 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        daysLeftTo2 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        valueCapPlotTwistNick = new javax.swing.JLabel();
+        valueAnimacionesNick = new javax.swing.JLabel();
+        valueDoblajesNick = new javax.swing.JLabel();
+        valuePlotTwistNick = new javax.swing.JLabel();
+        valueCapEstandarNick = new javax.swing.JLabel();
+        valueGuionesNick5 = new javax.swing.JLabel();
+        valueEscenariosNick = new javax.swing.JLabel();
+        valueCostosTotalesNick = new javax.swing.JLabel();
+        valueCostosDirectorNick = new javax.swing.JLabel();
+        valueGananciaNick = new javax.swing.JLabel();
+        valueFaltasPMNick = new javax.swing.JLabel();
+        valueCostoPMNick = new javax.swing.JLabel();
+        valueUtilidadNick = new javax.swing.JLabel();
+        starchannel = new javax.swing.JPanel();
+        Title3 = new javax.swing.JLabel();
+        TextWorker1 = new javax.swing.JLabel();
+        daysLeftTo3 = new javax.swing.JLabel();
+        daysEntregaStar = new javax.swing.JTextField();
+        TextDirector1 = new javax.swing.JLabel();
+        TextPM1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        statusDirectorStar = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        statusPMStar = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        menosGuionistabuttStar = new javax.swing.JButton();
+        menosAnimadorbuttStar = new javax.swing.JButton();
+        menosDoblajebuttStar = new javax.swing.JButton();
+        menosPlotTwistButtStar = new javax.swing.JButton();
+        menosEsambladoresButtStar = new javax.swing.JButton();
+        menosEscenariobuttStar = new javax.swing.JButton();
+        valueWorkerEscenarioStar = new javax.swing.JLabel();
+        valueworkerAnimadorStar = new javax.swing.JLabel();
+        valueWorkerDoblajeStar = new javax.swing.JLabel();
+        valueWorkerPlottwistStar = new javax.swing.JLabel();
+        valueWorkerEnsambladorStar = new javax.swing.JLabel();
+        valueWorkerGuionistaStar = new javax.swing.JLabel();
+        addEscenarioStar = new javax.swing.JButton();
+        addAnimadorStar = new javax.swing.JButton();
+        addDoblajeStar = new javax.swing.JButton();
+        addPlotTwistStar = new javax.swing.JButton();
+        addEnsambladorStar = new javax.swing.JButton();
+        addGuionistaStar = new javax.swing.JButton();
+        daysLeftTo4 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        daysLeftTo5 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        valueCapPlotTwistStar = new javax.swing.JLabel();
+        valueAnimacionesStar = new javax.swing.JLabel();
+        valueDoblajesStar = new javax.swing.JLabel();
+        valuePlotTwistStar = new javax.swing.JLabel();
+        valueCapEstandarStar = new javax.swing.JLabel();
+        valueGuionesStar = new javax.swing.JLabel();
+        valueEscenariosStar = new javax.swing.JLabel();
+        valueCostosTotalesStar = new javax.swing.JLabel();
+        valueCostosDirectorStar = new javax.swing.JLabel();
+        valueGananciaStar = new javax.swing.JLabel();
+        valueFaltasPMStar = new javax.swing.JLabel();
+        valueCostoPMStar = new javax.swing.JLabel();
+        valueUtilidadStar = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        home.setBackground(new java.awt.Color(0, 0, 0));
+        home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Title.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        Title.setForeground(new java.awt.Color(255, 255, 255));
+        Title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Title.setText("DASHBOARD NICK && STAR");
+        home.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 540, 40));
+
+        nickLogo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        nickLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Nickelodeon-logo-988AA9A459-seeklogo.com.png"))); // NOI18N
+        nickLogo.setText("jLabel1");
+        nickLogo.setToolTipText("");
+        home.add(nickLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 300, 160));
+
+        starLogo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        starLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/star-channel-logo-21915A5369-seeklogo.com.png"))); // NOI18N
+        home.add(starLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 290, 160));
+
+        labelTextWorkers.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        labelTextWorkers.setForeground(new java.awt.Color(255, 255, 255));
+        labelTextWorkers.setText("TRABAJADORES");
+        home.add(labelTextWorkers, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
+
+        labelTextWorkers1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        labelTextWorkers1.setForeground(new java.awt.Color(255, 255, 255));
+        labelTextWorkers1.setText("TRABAJADORES");
+        home.add(labelTextWorkers1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, -1, -1));
+
+        GuionistaNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        GuionistaNick.setText("Guionista");
+        home.add(GuionistaNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
+
+        EscenariosNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        EscenariosNick.setText("Escenario");
+        home.add(EscenariosNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, -1, -1));
+
+        AnimadorNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        AnimadorNick.setText("Animador");
+        home.add(AnimadorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, -1, -1));
+
+        DoblajeNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        DoblajeNick.setText("Doblaje");
+        home.add(DoblajeNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 360, -1, -1));
+
+        PlotTwistNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        PlotTwistNick.setText("Plot Twist");
+        home.add(PlotTwistNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, -1, -1));
+
+        EnsambladorNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        EnsambladorNick.setText("Ensambaldores");
+        home.add(EnsambladorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 430, -1, -1));
+
+        TotalWorkersNick.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        TotalWorkersNick.setText("Total");
+        home.add(TotalWorkersNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 460, -1, -1));
+
+        GuionistaStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        GuionistaStar.setText("Guionista");
+        home.add(GuionistaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+
+        EscenariosStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        EscenariosStar.setText("Escenario");
+        home.add(EscenariosStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        AnimadorStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        AnimadorStar.setText("Animador");
+        home.add(AnimadorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        DoblajeStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        DoblajeStar.setText("Doblaje");
+        home.add(DoblajeStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+
+        PlotTwistStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        PlotTwistStar.setText("Plot Twist");
+        home.add(PlotTwistStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, -1));
+
+        EnsambladorStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        EnsambladorStar.setText("Ensambaldores");
+        home.add(EnsambladorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+
+        TotalWorkersStar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        TotalWorkersStar.setText("Total");
+        home.add(TotalWorkersStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, -1, -1));
+        home.add(GuionistaSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 270, -1, -1));
+        home.add(AnimadorSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, -1, -1));
+        home.add(DoblajeSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, -1, -1));
+        home.add(PlotTwistSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, -1, -1));
+        home.add(EscenarioSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, -1, -1));
+
+        valueTotalNick.setText("jLabel1");
+        home.add(valueTotalNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 460, -1, -1));
+        home.add(EscensarioSpinnerNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, -1, -1));
+        home.add(GuionistaSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, -1, -1));
+        home.add(EscenarioSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 330, -1, -1));
+        home.add(AnimadorSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 360, -1, -1));
+        home.add(DoblajeSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, -1, -1));
+        home.add(PlotTwistSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, -1, -1));
+        home.add(EnsambladorSpinnerStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, -1, -1));
+
+        valueTotalStar.setText("jLabel1");
+        home.add(valueTotalStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, -1, -1));
+
+        DeadlineValue.setText("0");
+        DeadlineValue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DeadlineValueActionPerformed(evt);
+            }
+        });
+        home.add(DeadlineValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 20, -1));
+
+        Deadline.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        Deadline.setText("Deadline");
+        home.add(Deadline, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
+
+        DayDuration.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        DayDuration.setText("Duracion del Dia");
+        home.add(DayDuration, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, -1, -1));
+
+        DayDurationValue.setText("0");
+        home.add(DayDurationValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, -1, -1));
+
+        DashBoard.addTab("HOME", home);
+
+        nickelodeon.setBackground(new java.awt.Color(255, 117, 18));
+        nickelodeon.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Title1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        Title1.setForeground(new java.awt.Color(255, 255, 255));
+        Title1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Title1.setText("NICKELODEON");
+        nickelodeon.add(Title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 40));
+
+        TextWorker.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextWorker.setText("Project Manager");
+        nickelodeon.add(TextWorker, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+
+        daysLeftTo.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo.setText("RESUMEN FINANCIERO");
+        nickelodeon.add(daysLeftTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
+
+        jTextField1.setText("0");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
+
+        TextDirector.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextDirector.setText("Director");
+        nickelodeon.add(TextDirector, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        TextPM.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextPM.setText("Trabajadores Disponibles: ");
+        nickelodeon.add(TextPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel1.setText("Faltas");
+        nickelodeon.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setText("Guionista");
+        nickelodeon.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
+
+        statusPMNick.setText("Trabajando");
+        nickelodeon.add(statusPMNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 100, 20));
+
+        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel4.setText("Costos");
+        nickelodeon.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel5.setText("Capitulo Estandar:");
+        nickelodeon.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 290, -1, -1));
+
+        statusDirectorNick.setText("Viendo Anime");
+        nickelodeon.add(statusDirectorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 100, -1));
+
+        jLabel6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel6.setText("Costos");
+        nickelodeon.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel3.setText("Ensambladores");
+        nickelodeon.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel7.setText("Status Director: ");
+        nickelodeon.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel8.setText("Diseñador de Escenarios");
+        nickelodeon.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel9.setText("Animador de personajes");
+        nickelodeon.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel10.setText("Actores de Doblaje");
+        nickelodeon.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel11.setText("Guionista de PlotTwist");
+        nickelodeon.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, -1));
+
+        menosGuionistabuttNick.setText("-");
+        menosGuionistabuttNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosGuionistabuttNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosGuionistabuttNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, -1, -1));
+
+        menosAnimadorbuttNick.setText("-");
+        menosAnimadorbuttNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosAnimadorbuttNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosAnimadorbuttNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, -1, -1));
+
+        menosDoblajebuttNick.setText("-");
+        menosDoblajebuttNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosDoblajebuttNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosDoblajebuttNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, -1, -1));
+
+        menosPlotTwistButtNick.setText("-");
+        menosPlotTwistButtNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosPlotTwistButtNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosPlotTwistButtNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, -1, -1));
+
+        menosEsambladoresButtNick.setText("-");
+        menosEsambladoresButtNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosEsambladoresButtNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosEsambladoresButtNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, -1, -1));
+
+        menosEscenariobuttNick.setText("-");
+        menosEscenariobuttNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosEscenariobuttNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(menosEscenariobuttNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, -1, -1));
+
+        valueWorkerEscenarioNick.setText("0");
+        nickelodeon.add(valueWorkerEscenarioNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 10, 10));
+
+        valueworkerAnimadorNick.setText("0");
+        nickelodeon.add(valueworkerAnimadorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 10, -1));
+
+        valueWorkerDoblajeNick.setText("0");
+        nickelodeon.add(valueWorkerDoblajeNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 10, -1));
+
+        valueWorkerPlottwistNick.setText("0");
+        nickelodeon.add(valueWorkerPlottwistNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 10, -1));
+
+        valueWorkerEnsambladorNick.setText("0");
+        nickelodeon.add(valueWorkerEnsambladorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 470, 10, -1));
+
+        valueWorkerGuionistaNick.setText("0");
+        nickelodeon.add(valueWorkerGuionistaNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 10, -1));
+
+        addEscenarioNick.setText("+");
+        addEscenarioNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEscenarioNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addEscenarioNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, -1, -1));
+
+        addAnimadorNick.setText("+");
+        addAnimadorNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAnimadorNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addAnimadorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, -1, -1));
+
+        addDoblajeNick.setText("+");
+        addDoblajeNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDoblajeNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addDoblajeNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
+
+        addPlotTwistNick.setText("+");
+        addPlotTwistNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPlotTwistNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addPlotTwistNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, -1, -1));
+
+        addEnsambladorNick.setText("+");
+        addEnsambladorNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEnsambladorNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addEnsambladorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
+
+        addGuionistaNick.setText("+");
+        addGuionistaNick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGuionistaNickActionPerformed(evt);
+            }
+        });
+        nickelodeon.add(addGuionistaNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
+
+        daysLeftTo1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo1.setText("Días para entrega:");
+        nickelodeon.add(daysLeftTo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel13.setText("Status PM: ");
+        nickelodeon.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel14.setText("Animaciones:");
+        nickelodeon.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel15.setText("Guiones:");
+        nickelodeon.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel16.setText("Ganancia:");
+        nickelodeon.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel17.setText("Escenarios:");
+        nickelodeon.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel18.setText("Doblajes:");
+        nickelodeon.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel19.setText("PlotTwist:");
+        nickelodeon.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, -1, -1));
+
+        daysLeftTo2.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo2.setText("RESUMEN DE ACTIVIDADES");
+        nickelodeon.add(daysLeftTo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel20.setText("Costos Totales:");
+        nickelodeon.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel21.setText("Utilidad:");
+        nickelodeon.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel22.setText("Capitulo PlotTwist:");
+        nickelodeon.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, -1, -1));
+
+        valueCapPlotTwistNick.setText("0");
+        nickelodeon.add(valueCapPlotTwistNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, -1, -1));
+
+        valueAnimacionesNick.setText("0");
+        nickelodeon.add(valueAnimacionesNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+
+        valueDoblajesNick.setText("0");
+        nickelodeon.add(valueDoblajesNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
+
+        valuePlotTwistNick.setText("0");
+        nickelodeon.add(valuePlotTwistNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, -1, -1));
+
+        valueCapEstandarNick.setText("0");
+        nickelodeon.add(valueCapEstandarNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, -1, -1));
+
+        valueGuionesNick5.setText("0");
+        nickelodeon.add(valueGuionesNick5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, 20, -1));
+
+        valueEscenariosNick.setText("0");
+        nickelodeon.add(valueEscenariosNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
+
+        valueCostosTotalesNick.setText("0");
+        nickelodeon.add(valueCostosTotalesNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, 20, -1));
+
+        valueCostosDirectorNick.setText("0");
+        nickelodeon.add(valueCostosDirectorNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 20, -1));
+
+        valueGananciaNick.setText("0");
+        nickelodeon.add(valueGananciaNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 20, -1));
+
+        valueFaltasPMNick.setText("0");
+        nickelodeon.add(valueFaltasPMNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 20, -1));
+
+        valueCostoPMNick.setText("0");
+        nickelodeon.add(valueCostoPMNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 20, -1));
+
+        valueUtilidadNick.setText("0");
+        nickelodeon.add(valueUtilidadNick, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 450, 20, -1));
+
+        DashBoard.addTab("NICK", nickelodeon);
+
+        starchannel.setBackground(new java.awt.Color(0, 51, 153));
+        starchannel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Title3.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        Title3.setForeground(new java.awt.Color(255, 255, 255));
+        Title3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Title3.setText("STAR CHANNEL");
+        starchannel.add(Title3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 40));
+
+        TextWorker1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextWorker1.setText("Project Manager");
+        starchannel.add(TextWorker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+
+        daysLeftTo3.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo3.setText("RESUMEN FINANCIERO");
+        starchannel.add(daysLeftTo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
+
+        daysEntregaStar.setText("0");
+        daysEntregaStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                daysEntregaStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(daysEntregaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
+
+        TextDirector1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextDirector1.setText("Director");
+        starchannel.add(TextDirector1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        TextPM1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TextPM1.setText("Trabajadores Disponibles: ");
+        starchannel.add(TextPM1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel12.setText("Faltas");
+        starchannel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel23.setText("Guionista");
+        starchannel.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
+
+        statusDirectorStar.setText("Trabajando");
+        starchannel.add(statusDirectorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 100, 20));
+
+        jLabel24.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel24.setText("Costos");
+        starchannel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel25.setText("Capitulo Estandar:");
+        starchannel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 290, -1, -1));
+
+        statusPMStar.setText("Viendo Anime");
+        starchannel.add(statusPMStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 100, -1));
+
+        jLabel26.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel26.setText("Costos");
+        starchannel.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel27.setText("Ensambladores");
+        starchannel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel28.setText("Status Director: ");
+        starchannel.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel29.setText("Diseñador de Escenarios");
+        starchannel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel30.setText("Animador de personajes");
+        starchannel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel31.setText("Actores de Doblaje");
+        starchannel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel32.setText("Guionista de PlotTwist");
+        starchannel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, -1, -1));
+
+        menosGuionistabuttStar.setText("-");
+        menosGuionistabuttStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosGuionistabuttStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosGuionistabuttStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, -1, -1));
+
+        menosAnimadorbuttStar.setText("-");
+        menosAnimadorbuttStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosAnimadorbuttStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosAnimadorbuttStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, -1, -1));
+
+        menosDoblajebuttStar.setText("-");
+        menosDoblajebuttStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosDoblajebuttStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosDoblajebuttStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, -1, -1));
+
+        menosPlotTwistButtStar.setText("-");
+        menosPlotTwistButtStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosPlotTwistButtStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosPlotTwistButtStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, -1, -1));
+
+        menosEsambladoresButtStar.setText("-");
+        menosEsambladoresButtStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosEsambladoresButtStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosEsambladoresButtStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 460, -1, -1));
+
+        menosEscenariobuttStar.setText("-");
+        menosEscenariobuttStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosEscenariobuttStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(menosEscenariobuttStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, -1, -1));
+
+        valueWorkerEscenarioStar.setText("0");
+        starchannel.add(valueWorkerEscenarioStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 10, 10));
+
+        valueworkerAnimadorStar.setText("0");
+        starchannel.add(valueworkerAnimadorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 10, -1));
+
+        valueWorkerDoblajeStar.setText("0");
+        starchannel.add(valueWorkerDoblajeStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 10, -1));
+
+        valueWorkerPlottwistStar.setText("0");
+        starchannel.add(valueWorkerPlottwistStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 10, -1));
+
+        valueWorkerEnsambladorStar.setText("0");
+        starchannel.add(valueWorkerEnsambladorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 470, 10, -1));
+
+        valueWorkerGuionistaStar.setText("0");
+        starchannel.add(valueWorkerGuionistaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 10, -1));
+
+        addEscenarioStar.setText("+");
+        addEscenarioStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEscenarioStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addEscenarioStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, -1, -1));
+
+        addAnimadorStar.setText("+");
+        addAnimadorStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAnimadorStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addAnimadorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, -1, -1));
+
+        addDoblajeStar.setText("+");
+        addDoblajeStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addDoblajeStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addDoblajeStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
+
+        addPlotTwistStar.setText("+");
+        addPlotTwistStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPlotTwistStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addPlotTwistStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, -1, -1));
+
+        addEnsambladorStar.setText("+");
+        addEnsambladorStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addEnsambladorStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addEnsambladorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
+
+        addGuionistaStar.setText("+");
+        addGuionistaStar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGuionistaStarActionPerformed(evt);
+            }
+        });
+        starchannel.add(addGuionistaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
+
+        daysLeftTo4.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo4.setText("Días para entrega:");
+        starchannel.add(daysLeftTo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, -1));
+
+        jLabel33.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel33.setText("Status PM: ");
+        starchannel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel34.setText("Animaciones:");
+        starchannel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel35.setText("Guiones:");
+        starchannel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel36.setText("Ganancia:");
+        starchannel.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, -1));
+
+        jLabel37.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel37.setText("Escenarios:");
+        starchannel.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, -1, -1));
+
+        jLabel38.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel38.setText("Doblajes:");
+        starchannel.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, -1, -1));
+
+        jLabel39.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel39.setText("PlotTwist:");
+        starchannel.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, -1, -1));
+
+        daysLeftTo5.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        daysLeftTo5.setText("RESUMEN DE ACTIVIDADES");
+        starchannel.add(daysLeftTo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, -1, -1));
+
+        jLabel40.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel40.setText("Costos Totales:");
+        starchannel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, -1, -1));
+
+        jLabel41.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel41.setText("Utilidad:");
+        starchannel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, -1));
+
+        jLabel42.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel42.setText("Capitulo PlotTwist:");
+        starchannel.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, -1, -1));
+
+        valueCapPlotTwistStar.setText("0");
+        starchannel.add(valueCapPlotTwistStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, -1, -1));
+
+        valueAnimacionesStar.setText("0");
+        starchannel.add(valueAnimacionesStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+
+        valueDoblajesStar.setText("0");
+        starchannel.add(valueDoblajesStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
+
+        valuePlotTwistStar.setText("0");
+        starchannel.add(valuePlotTwistStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, -1, -1));
+
+        valueCapEstandarStar.setText("0");
+        starchannel.add(valueCapEstandarStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, -1, -1));
+
+        valueGuionesStar.setText("0");
+        starchannel.add(valueGuionesStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, 20, -1));
+
+        valueEscenariosStar.setText("0");
+        starchannel.add(valueEscenariosStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
+
+        valueCostosTotalesStar.setText("0");
+        starchannel.add(valueCostosTotalesStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, 20, -1));
+
+        valueCostosDirectorStar.setText("0");
+        starchannel.add(valueCostosDirectorStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 20, -1));
+
+        valueGananciaStar.setText("0");
+        starchannel.add(valueGananciaStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 20, -1));
+
+        valueFaltasPMStar.setText("0");
+        starchannel.add(valueFaltasPMStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 20, -1));
+
+        valueCostoPMStar.setText("0");
+        starchannel.add(valueCostoPMStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 20, -1));
+
+        valueUtilidadStar.setText("0");
+        starchannel.add(valueUtilidadStar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 450, 20, -1));
+
+        DashBoard.addTab("STAR", starchannel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(DashBoard)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(DashBoard)
         );
+
+        DashBoard.getAccessibleContext().setAccessibleName("home");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void DeadlineValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeadlineValueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DeadlineValueActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void menosGuionistabuttNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosGuionistabuttNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosGuionistabuttNickActionPerformed
+
+    private void menosAnimadorbuttNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosAnimadorbuttNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosAnimadorbuttNickActionPerformed
+
+    private void menosDoblajebuttNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosDoblajebuttNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosDoblajebuttNickActionPerformed
+
+    private void menosPlotTwistButtNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosPlotTwistButtNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosPlotTwistButtNickActionPerformed
+
+    private void menosEsambladoresButtNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosEsambladoresButtNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosEsambladoresButtNickActionPerformed
+
+    private void menosEscenariobuttNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosEscenariobuttNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosEscenariobuttNickActionPerformed
+
+    private void addEscenarioNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEscenarioNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addEscenarioNickActionPerformed
+
+    private void addAnimadorNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAnimadorNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addAnimadorNickActionPerformed
+
+    private void addDoblajeNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDoblajeNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addDoblajeNickActionPerformed
+
+    private void addPlotTwistNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPlotTwistNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addPlotTwistNickActionPerformed
+
+    private void addEnsambladorNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEnsambladorNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addEnsambladorNickActionPerformed
+
+    private void addGuionistaNickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGuionistaNickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addGuionistaNickActionPerformed
+
+    private void daysEntregaStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daysEntregaStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_daysEntregaStarActionPerformed
+
+    private void menosGuionistabuttStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosGuionistabuttStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosGuionistabuttStarActionPerformed
+
+    private void menosAnimadorbuttStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosAnimadorbuttStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosAnimadorbuttStarActionPerformed
+
+    private void menosDoblajebuttStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosDoblajebuttStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosDoblajebuttStarActionPerformed
+
+    private void menosPlotTwistButtStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosPlotTwistButtStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosPlotTwistButtStarActionPerformed
+
+    private void menosEsambladoresButtStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosEsambladoresButtStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosEsambladoresButtStarActionPerformed
+
+    private void menosEscenariobuttStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosEscenariobuttStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menosEscenariobuttStarActionPerformed
+
+    private void addEscenarioStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEscenarioStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addEscenarioStarActionPerformed
+
+    private void addAnimadorStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAnimadorStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addAnimadorStarActionPerformed
+
+    private void addDoblajeStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDoblajeStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addDoblajeStarActionPerformed
+
+    private void addPlotTwistStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPlotTwistStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addPlotTwistStarActionPerformed
+
+    private void addEnsambladorStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEnsambladorStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addEnsambladorStarActionPerformed
+
+    private void addGuionistaStarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGuionistaStarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addGuionistaStarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +1050,170 @@ public class DashBoard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel AnimadorNick;
+    private javax.swing.JSpinner AnimadorSpinnerNick;
+    private javax.swing.JSpinner AnimadorSpinnerStar;
+    private javax.swing.JLabel AnimadorStar;
+    private javax.swing.JTabbedPane DashBoard;
+    private javax.swing.JLabel DayDuration;
+    private javax.swing.JTextField DayDurationValue;
+    private javax.swing.JLabel Deadline;
+    private javax.swing.JTextField DeadlineValue;
+    private javax.swing.JLabel DoblajeNick;
+    private javax.swing.JSpinner DoblajeSpinnerNick;
+    private javax.swing.JSpinner DoblajeSpinnerStar;
+    private javax.swing.JLabel DoblajeStar;
+    private javax.swing.JLabel EnsambladorNick;
+    private javax.swing.JSpinner EnsambladorSpinnerStar;
+    private javax.swing.JLabel EnsambladorStar;
+    private javax.swing.JSpinner EscenarioSpinnerNick;
+    private javax.swing.JSpinner EscenarioSpinnerStar;
+    private javax.swing.JLabel EscenariosNick;
+    private javax.swing.JLabel EscenariosStar;
+    private javax.swing.JSpinner EscensarioSpinnerNick;
+    private javax.swing.JLabel GuionistaNick;
+    private javax.swing.JSpinner GuionistaSpinnerNick;
+    private javax.swing.JSpinner GuionistaSpinnerStar;
+    private javax.swing.JLabel GuionistaStar;
+    private javax.swing.JLabel PlotTwistNick;
+    private javax.swing.JSpinner PlotTwistSpinnerNick;
+    private javax.swing.JSpinner PlotTwistSpinnerStar;
+    private javax.swing.JLabel PlotTwistStar;
+    private javax.swing.JLabel TextDirector;
+    private javax.swing.JLabel TextDirector1;
+    private javax.swing.JLabel TextPM;
+    private javax.swing.JLabel TextPM1;
+    private javax.swing.JLabel TextWorker;
+    private javax.swing.JLabel TextWorker1;
+    private javax.swing.JLabel Title;
+    private javax.swing.JLabel Title1;
+    private javax.swing.JLabel Title3;
+    private javax.swing.JLabel TotalWorkersNick;
+    private javax.swing.JLabel TotalWorkersStar;
+    private javax.swing.JButton addAnimadorNick;
+    private javax.swing.JButton addAnimadorStar;
+    private javax.swing.JButton addDoblajeNick;
+    private javax.swing.JButton addDoblajeStar;
+    private javax.swing.JButton addEnsambladorNick;
+    private javax.swing.JButton addEnsambladorStar;
+    private javax.swing.JButton addEscenarioNick;
+    private javax.swing.JButton addEscenarioStar;
+    private javax.swing.JButton addGuionistaNick;
+    private javax.swing.JButton addGuionistaStar;
+    private javax.swing.JButton addPlotTwistNick;
+    private javax.swing.JButton addPlotTwistStar;
+    private javax.swing.JTextField daysEntregaStar;
+    private javax.swing.JLabel daysLeftTo;
+    private javax.swing.JLabel daysLeftTo1;
+    private javax.swing.JLabel daysLeftTo2;
+    private javax.swing.JLabel daysLeftTo3;
+    private javax.swing.JLabel daysLeftTo4;
+    private javax.swing.JLabel daysLeftTo5;
+    private javax.swing.JPanel home;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel labelTextWorkers;
+    private javax.swing.JLabel labelTextWorkers1;
+    private javax.swing.JButton menosAnimadorbuttNick;
+    private javax.swing.JButton menosAnimadorbuttStar;
+    private javax.swing.JButton menosDoblajebuttNick;
+    private javax.swing.JButton menosDoblajebuttStar;
+    private javax.swing.JButton menosEsambladoresButtNick;
+    private javax.swing.JButton menosEsambladoresButtStar;
+    private javax.swing.JButton menosEscenariobuttNick;
+    private javax.swing.JButton menosEscenariobuttStar;
+    private javax.swing.JButton menosGuionistabuttNick;
+    private javax.swing.JButton menosGuionistabuttStar;
+    private javax.swing.JButton menosPlotTwistButtNick;
+    private javax.swing.JButton menosPlotTwistButtStar;
+    private javax.swing.JLabel nickLogo;
+    private javax.swing.JPanel nickelodeon;
+    private javax.swing.JLabel starLogo;
+    private javax.swing.JPanel starchannel;
+    private javax.swing.JLabel statusDirectorNick;
+    private javax.swing.JLabel statusDirectorStar;
+    private javax.swing.JLabel statusPMNick;
+    private javax.swing.JLabel statusPMStar;
+    private javax.swing.JLabel valueAnimacionesNick;
+    private javax.swing.JLabel valueAnimacionesStar;
+    private javax.swing.JLabel valueCapEstandarNick;
+    private javax.swing.JLabel valueCapEstandarStar;
+    private javax.swing.JLabel valueCapPlotTwistNick;
+    private javax.swing.JLabel valueCapPlotTwistStar;
+    private javax.swing.JLabel valueCostoPMNick;
+    private javax.swing.JLabel valueCostoPMStar;
+    private javax.swing.JLabel valueCostosDirectorNick;
+    private javax.swing.JLabel valueCostosDirectorStar;
+    private javax.swing.JLabel valueCostosTotalesNick;
+    private javax.swing.JLabel valueCostosTotalesStar;
+    private javax.swing.JLabel valueDoblajesNick;
+    private javax.swing.JLabel valueDoblajesStar;
+    private javax.swing.JLabel valueEscenariosNick;
+    private javax.swing.JLabel valueEscenariosStar;
+    private javax.swing.JLabel valueFaltasPMNick;
+    private javax.swing.JLabel valueFaltasPMStar;
+    private javax.swing.JLabel valueGananciaNick;
+    private javax.swing.JLabel valueGananciaStar;
+    private javax.swing.JLabel valueGuionesNick5;
+    private javax.swing.JLabel valueGuionesStar;
+    private javax.swing.JLabel valuePlotTwistNick;
+    private javax.swing.JLabel valuePlotTwistStar;
+    private javax.swing.JLabel valueTotalNick;
+    private javax.swing.JLabel valueTotalStar;
+    private javax.swing.JLabel valueUtilidadNick;
+    private javax.swing.JLabel valueUtilidadStar;
+    private javax.swing.JLabel valueWorkerDoblajeNick;
+    private javax.swing.JLabel valueWorkerDoblajeStar;
+    private javax.swing.JLabel valueWorkerEnsambladorNick;
+    private javax.swing.JLabel valueWorkerEnsambladorStar;
+    private javax.swing.JLabel valueWorkerEscenarioNick;
+    private javax.swing.JLabel valueWorkerEscenarioStar;
+    private javax.swing.JLabel valueWorkerGuionistaNick;
+    private javax.swing.JLabel valueWorkerGuionistaStar;
+    private javax.swing.JLabel valueWorkerPlottwistNick;
+    private javax.swing.JLabel valueWorkerPlottwistStar;
+    private javax.swing.JLabel valueworkerAnimadorNick;
+    private javax.swing.JLabel valueworkerAnimadorStar;
     // End of variables declaration//GEN-END:variables
 }
