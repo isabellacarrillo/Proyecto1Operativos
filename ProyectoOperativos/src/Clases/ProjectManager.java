@@ -4,6 +4,7 @@
  */
 package Clases;
 
+import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -22,6 +23,62 @@ public class ProjectManager extends Worker {
         this.registerDayAccount = 0;
     }
 
+    
+    @Override
+    
+    public void supervisionWorkPM(this.dayDuration) {
+        while (working) {
+            try {
+
+                // Media hora = un dia entre 24 horas entre 2
+                double halfHour = this.dayDuration / 48;
+                int counter = 0;
+
+                // 16 horas al dia
+                while (counter < 16) {
+
+                    drive.setPMStatus(0);
+
+                    //Si el director lo esta vigilando entonces
+                    if (drive.getDirectorStatus() == 0) {
+                        //TODO: poner lo que va a hacer 
+
+                        drive.setFaltas(drive.getFaltas() + 1);
+                        drive.setSalaryDiscount(drive.getSalaryDiscount() + 50);
+                        
+                        //Le quitan su plata
+                        drive.getCostMutex().acquire();
+                        drive.setPMStatus(drive.getPMCost() - 50);
+                        drive.getCostMutex().release();
+
+                    }
+
+                    sleep(Math.round(halfHour));
+
+                    drive.setPMStatus(1);
+                    sleep(Math.round(halfHour));
+                    counter++;
+                }
+
+                drive.setPMStatus(0);
+
+                sleep(Math.round(halfHour * 16));
+                drive.getDaysMutex().acquire();
+                drive.setDaysleftToRelease(drive.getDaysleftToRelease() - 1);
+                drive.getDaysMutex().release();
+
+                //Cobrando su dia de trabajo
+                drive.getCostMutex().acquire();
+                drive.setPmCost(drive.getPMCost() + payPerHour * 24);
+                drive.getCostMutex().release();
+
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+
+        
+    }
 
         
     

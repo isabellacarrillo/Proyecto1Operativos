@@ -24,7 +24,7 @@ public class Worker {
       private float acc;
       private float productionPerDay;
       private Semaphore mutex;
-      private Drive drive;
+      public Drive drive;
       
         public Worker (int type, String name, int dayDuration, int payPerHour, Semaphore m, Drive d) {
         this.type = type;
