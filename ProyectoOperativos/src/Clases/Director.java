@@ -71,7 +71,7 @@ import java.lang.System.Logger.Level;
                     this.administrativo = false;
                     this.distribuye = true;
                     this.gui.estadoDirector(vigila, administrativo, distribuye, this.empresa);
-                    distribuirVideojuegos();
+                    distribuirEpisodios();
                                 
                 }
             }
@@ -80,7 +80,7 @@ import java.lang.System.Logger.Level;
         }
     }
     
-    public void distribuirVideojuegos(){
+    public void distribuirEpisodios(){
         try{
             empresa.mutex.acquire();
             empresa.estudio.distribucion(empresa.name);

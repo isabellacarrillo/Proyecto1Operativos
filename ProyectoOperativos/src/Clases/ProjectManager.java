@@ -70,8 +70,8 @@ public class ProjectManager extends Thread {
     public boolean vigilado(boolean director){
         if(this.anime){
             this.qtyfaltas++;
-            this.descontado+=50;
-            this.savings -= 50;
+            this.descontado+=100;
+            this.savings -= 100;
             this.gui.atrapado(this.empresa, this.qtyfaltas, this.descontado);
             return true;
             
