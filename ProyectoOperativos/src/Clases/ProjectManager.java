@@ -41,7 +41,7 @@ public class ProjectManager extends Thread {
     public void run(){
         while(true){
             try{
-                for(int gui=0; gui<16; gui++){
+                for(int gui=0; gui<16; gui++){ 
                     sleep(this.tiempo30min);
                     this.anime = true;
                     
@@ -50,7 +50,7 @@ public class ProjectManager extends Thread {
                     this.anime = false;
                     this.gui.estadoPM(this.anime, this.empresa);
                 }
-                sleep(this.dia - (this.tiempo30min * 32));
+                sleep(this.dia - (this.tiempo30min * 30));
                 this.savings += this.wage;
                 System.out.println(empresa.name + "   " + empresa.deadline);
                 proceso();
