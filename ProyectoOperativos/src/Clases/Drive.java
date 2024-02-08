@@ -35,7 +35,7 @@ public class Drive {
     private int PMStatus = 0;
     
     private int salaryDiscount = 0;
-    private int faltas = 0;
+    private int faults = 0;
     
     //Semaphores
     
@@ -47,13 +47,13 @@ public class Drive {
     private int daysleftToRelease;
 
     //Costos de producir un episodio
-    private float scriptCost = 20;// no se si se inicializa en 20 (lo que cobra por hora) o si lo inicializo en 0
-    private float scenarioCost = 26;
-    private float animationsCost = 40;
-    private float dubbingsCost = 16;
-    private float plotTwistCost = 34;
-    private float PMcost = 40;
-    private float DirectorCost = 60; 
+    private int scriptCost = 0;// no se si se inicializa en 20 (lo que cobra por hora) o si lo inicializo en 0
+    private int scenarioCost = 0;
+    private int animationsCost = 0;
+    private int dubbingsCost = 0;
+    private int plotTwistCost = 0;
+    private int PMcost = 0;
+    private int DirectorCost = 0; 
     
     private float winnings = 0;
     private float totalCosts = 0;
@@ -122,16 +122,7 @@ public class Drive {
              }
     }  
     
-     public void makeEpisode(String studio){
-        switch(studio){
-            case "Nickelodeon":
-                if ((getScripts() >= 2)&& (getDubbings()>=4) && (getScenarios()>= 1)&&(getAnimations()>=4)){
-                }
-                
-        }
-        
-        
-    }
+   
     
     /**
      * @return the directorStatus
@@ -176,17 +167,17 @@ public class Drive {
     }
 
     /**
-     * @return the faltas
+     * @return the faults
      */
-    public int getFaltas() {
-        return faltas;
+    public int getFaults() {
+        return faults;
     }
 
     /**
-     * @param faltas the faltas to set
+     * @param faults
      */
-    public void setFaltas(int faltas) {
-        this.faltas = faltas;
+    public void setFaults(int faults) {
+        this.faults = faults;
     }
 
     /**
@@ -339,7 +330,7 @@ public class Drive {
     /**
      * @return the scriptCost
      */
-    public float getScriptCost() {
+    public int getScriptCost() {
         return scriptCost;
     }
 
@@ -353,7 +344,7 @@ public class Drive {
     /**
      * @return the scenarioCost
      */
-    public float getScenarioCost() {
+    public int getScenarioCost() {
         return scenarioCost;
     }
 
@@ -367,7 +358,7 @@ public class Drive {
     /**
      * @return the animationsCost
      */
-    public float getAnimationsCost() {
+    public int getAnimationsCost() {
         return animationsCost;
     }
 
@@ -381,7 +372,7 @@ public class Drive {
     /**
      * @return the dubbingsCost
      */
-    public float getDubbingsCost() {
+    public int getDubbingsCost() {
         return dubbingsCost;
     }
 
@@ -395,7 +386,7 @@ public class Drive {
     /**
      * @return the plotTwistCost
      */
-    public float getPlotTwistCost() {
+    public int getPlotTwistCost() {
         return plotTwistCost;
     }
 
@@ -409,7 +400,7 @@ public class Drive {
     /**
      * @return the PMcost
      */
-    public float getPMcost() {
+    public int getPMcost() {
         return PMcost;
     }
 
@@ -423,7 +414,7 @@ public class Drive {
     /**
      * @return the DirectorCost
      */
-    public float getDirectorCost() {
+    public int getDirectorCost() {
         return DirectorCost;
     }
 

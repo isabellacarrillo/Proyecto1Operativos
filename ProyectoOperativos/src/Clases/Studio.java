@@ -33,11 +33,18 @@ public class Studio {
     
     
     
-    
-    
-   
-
- 
+    public boolean canNickReleaseEpisode (int scripts,int scenarios, int dubbings, int animations ){
+          return (scripts>= 2 && scenarios >= 1 && dubbings>= 4 && animations>= 4);
+    }
+     public boolean canNickReleaseEpisodePlotTwist (int scripts,int scenarios, int dubbings, int animations, int plotTwists ){
+          return (scripts>= 2 && scenarios >= 1 && dubbings>= 4 && animations>= 4 && plotTwists >= 2);
+    }
+       public boolean canStarReleaseEpisode (int scripts,int scenarios, int dubbings, int animations ){
+          return (scripts>= 2 && scenarios >= 3 && dubbings>= 6 && animations>= 4);
+    }
+        public boolean canStarReleaseEpisodePlotTwist (int scripts,int scenarios, int dubbings, int animations, int plotTwists ){
+          return (scripts>= 2 && scenarios >= 3 && dubbings>= 6 && animations>= 4 && plotTwists >= 5);
+    }
 
     /**
      * @return the incomeFromEpisode

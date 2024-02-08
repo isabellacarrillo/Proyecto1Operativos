@@ -46,18 +46,29 @@ public class Director extends Worker {
                     //Tenemos que incluir el director en un momento aleatorio del día yendo a chequear al PM
                     Random random = new Random();
                     double hour = getDayDuration()/24; //esto me da el valor de una hora
-                    double watching = random.nextInt(24)*hour;
+                    double randomHour = random.nextInt(24)*hour;
                     
                     int counter = 0;
                     while (counter < getDayDuration()){
-                        
+                        if (counter ==randomHour){ 
+                            drive.setDirectorStatus(0); 
+                            double minute = hour/60; 
+                            sleep(Math.round(35 * minute));
+                            drive.setDirectorStatus(1); //35 minutos esra vigilando
+                            sleep(Math.round(25 * minute));
+                            drive.setDirectorStatus(0);
+                      }
+                        counter += hour;
                     }
                     
                     
                     
                     
                 }
-                
+                drive.getCostMutex().acquire();
+                drive.setDirectorCost(drive.getDirectorCost()+ getPayPerHour()*24);
+                drive.getCostMutex().release();
+               
             }catch(Exception e){
                 
             }
