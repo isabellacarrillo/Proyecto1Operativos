@@ -16,13 +16,14 @@ public class Studio {
     private float incomeFromEpisodePT;
     private int employees;
     
-    private float scriptCosts = 20f;
-    private float scenarioCosts = 26f;
-    private float animationsCosts = 40f;
-    private float dubbingsCosts = 16f;
-    private float plotTwistCosts = 34f;
-    private float PMcosts = 40f;
-    private float DirectorCosts = 60f; 
+    private int scriptCosts = 20;
+    private int scenarioCosts = 26;
+    private int animationsCosts = 40;
+    private int dubbingsCosts = 16;
+    private int plotTwistCosts = 34;
+    private int ensambladoresCosts = 50;
+    private int PMcosts = 40;
+    private int DirectorCosts = 60; 
     
     
     private float scriptsPerDay;
@@ -30,7 +31,7 @@ public class Studio {
     private float scenariosPerDay;
     private float dubbingsPerDay;
     private float plotTwistsPerDay;
-    
+    private float episodesPerDay;
     
     
     public boolean canNickReleaseEpisode (int scripts,int scenarios, int dubbings, int animations ){
@@ -91,98 +92,98 @@ public class Studio {
     /**
      * @return the scriptCosts
      */
-    public float getScriptCosts() {
+    public int getScriptCosts() {
         return scriptCosts;
     }
 
     /**
      * @param scriptCosts the scriptCosts to set
      */
-    public void setScriptCosts(float scriptCosts) {
+    public void setScriptCosts(int scriptCosts) {
         this.scriptCosts = scriptCosts;
     }
 
     /**
      * @return the scenarioCosts
      */
-    public float getScenarioCosts() {
+    public int getScenarioCosts() {
         return scenarioCosts;
     }
 
     /**
      * @param scenarioCosts the scenarioCosts to set
      */
-    public void setScenarioCosts(float scenarioCosts) {
+    public void setScenarioCosts(int scenarioCosts) {
         this.scenarioCosts = scenarioCosts;
     }
 
     /**
      * @return the animationsCosts
      */
-    public float getAnimationsCosts() {
+    public int getAnimationsCosts() {
         return animationsCosts;
     }
 
     /**
      * @param animationsCosts the animationsCosts to set
      */
-    public void setAnimationsCosts(float animationsCosts) {
+    public void setAnimationsCosts(int animationsCosts) {
         this.animationsCosts = animationsCosts;
     }
 
     /**
      * @return the dubbingsCosts
      */
-    public float getDubbingsCosts() {
+    public int getDubbingsCosts() {
         return dubbingsCosts;
     }
 
     /**
      * @param dubbingsCosts the dubbingsCosts to set
      */
-    public void setDubbingsCosts(float dubbingsCosts) {
+    public void setDubbingsCosts(int dubbingsCosts) {
         this.dubbingsCosts = dubbingsCosts;
     }
 
     /**
      * @return the plotTwistCosts
      */
-    public float getPlotTwistCosts() {
+    public int getPlotTwistCosts() {
         return plotTwistCosts;
     }
 
     /**
      * @param plotTwistCosts the plotTwistCosts to set
      */
-    public void setPlotTwistCosts(float plotTwistCosts) {
+    public void setPlotTwistCosts(int plotTwistCosts) {
         this.plotTwistCosts = plotTwistCosts;
     }
 
     /**
      * @return the PMcosts
      */
-    public float getPMcosts() {
+    public int getPMcosts() {
         return PMcosts;
     }
 
     /**
      * @param PMcosts the PMcosts to set
      */
-    public void setPMcosts(float PMcosts) {
+    public void setPMcosts(int PMcosts) {
         this.PMcosts = PMcosts;
     }
 
     /**
      * @return the DirectorCosts
      */
-    public float getDirectorCosts() {
+    public int getDirectorCosts() {
         return DirectorCosts;
     }
 
     /**
      * @param DirectorCosts the DirectorCosts to set
      */
-    public void setDirectorCosts(float DirectorCosts) {
+    public void setDirectorCosts(int DirectorCosts) {
         this.DirectorCosts = DirectorCosts;
     }
 
@@ -254,6 +255,34 @@ public class Studio {
      */
     public void setPlotTwistsPerDay(float plotTwistsPerDay) {
         this.plotTwistsPerDay = plotTwistsPerDay;
+    }
+
+    /**
+     * @return the ensambladoresCosts
+     */
+    public int getEnsambladoresCosts() {
+        return ensambladoresCosts;
+    }
+
+    /**
+     * @param ensambladoresCosts the ensambladoresCosts to set
+     */
+    public void setEnsambladoresCosts(int ensambladoresCosts) {
+        this.ensambladoresCosts = ensambladoresCosts;
+    }
+
+    /**
+     * @return the episodesPerDay
+     */
+    public float getEpisodesPerDay() {
+        return episodesPerDay;
+    }
+
+    /**
+     * @param episodesPerDay the episodesPerDay to set
+     */
+    public void setEpisodesPerDay(float episodesPerDay) {
+        this.episodesPerDay = episodesPerDay;
     }
     
     

@@ -38,6 +38,13 @@ public class Worker {
         this.drive = d;
         
     }
+        public Worker (int type,float productionPerDay, int payPerHour, Drive drive, Semaphore mutex){
+            this.type = type;
+            this.productionPerDay = productionPerDay;
+            this.payPerHour = payPerHour;
+            this.drive = drive;
+            this.mutex = mutex;
+        }
           
           
         public void run(){
@@ -80,6 +87,52 @@ public class Worker {
             }
             
         }
+        
+    static public Worker startWorker(int type, Drive drive, Semaphore mutex, Studio studio)  {
+        switch (type){
+            
+            //Guionista
+            case 0:
+                return new Worker(0,studio.getScriptsPerDay(), studio.getScriptCosts(), drive, mutex);
+            
+           //Escenarios
+            case 1: 
+                return new Worker(1, studio.getScenariosPerDay(), studio.getScenarioCosts(), drive, mutex);
+           //Animaciones
+            case 2:
+                return new Worker(2, studio.getAnimationsPerDay(), studio.getAnimationsCosts(), drive, mutex);
+            
+           //Doblajes
+            case 3: 
+                return new Worker(3, studio.getDubbingsPerDay(), studio.getDubbingsCosts(), drive, mutex);
+            
+            //Plot Twists
+            case 4:
+                return new Worker(4, studio.getPlotTwistsPerDay(), studio.getPlotTwistCosts(), drive, mutex);
+            case 5:
+                return new Worker(5, studio.getEpisodesPerDay(), studio.getEnsambladoresCosts(), drive, mutex);
+           
+            case 6:
+                 return new ProjectManager(6,"PM",500,studio.getPMcosts(), mutex, drive );
+            case 7:
+                  return new Director(7, "Director", 500,studio.getDirectorCosts(), mutex, drive);
+            
+            
+        }
+        return null;
+    }
+    
+    //Función que va a ensamblar los episodios 
+    public void Ensamblador(){
+        try{
+            drive.getWorkerMutex().acquire();
+
+            //Vamos a verificar si las partes necesarias para hacer un episodio están.
+          
+        }
+        catch(Exception e){}
+    }
+        
 
     /**
      * @return the type

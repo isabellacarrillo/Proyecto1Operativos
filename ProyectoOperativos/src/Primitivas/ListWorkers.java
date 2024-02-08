@@ -4,24 +4,26 @@
  */
 package Primitivas;
 
+import Clases.Worker;
+
 /**
  *
  * @author Admin
  */
-public class List {
-    private Node pFirst;
-    private Node pLast;
+public class ListWorkers {
+    private NodeWorkers pFirst;
+    private NodeWorkers pLast;
     private int size;
     
     
 
-    public List() { //Constructor 
+    public ListWorkers() { //Constructor 
         this.pFirst = null;
         this.pLast = null;
         this.size = 0;
     }
 
-    public List(Node pFirst, Node pLast, int size) {
+    public ListWorkers(NodeWorkers pFirst, NodeWorkers pLast, int size) {
         this.pFirst = pFirst;
         this.pLast = pLast;
         this.size = 0;
@@ -39,8 +41,8 @@ public class List {
         return getpFirst() == null;
     }
     
-    public void addAtTheEnd(Object data){ 
-        Node nuevo = new Node (data);
+    public void addtoList(Worker data){ 
+        NodeWorkers nuevo = new NodeWorkers (data);
         if (this.isEmpty()){
             this.setpFirst(nuevo);
             this.setpLast(nuevo);
@@ -53,28 +55,28 @@ public class List {
     /**
      * @return the pFirst
      */
-    public Node getpFirst() {
+    public NodeWorkers getpFirst() {
         return pFirst;
     }
 
     /**
      * @param pFirst the pFirst to set
      */
-    public void setpFirst(Node pFirst) {
+    public void setpFirst(NodeWorkers pFirst) {
         this.pFirst = pFirst;
     }
 
     /**
      * @return the pLast
      */
-    public Node getpLast() {
+    public NodeWorkers getpLast() {
         return pLast;
     }
 
     /**
      * @param pLast the pLast to set
      */
-    public void setpLast(Node pLast) {
+    public void setpLast(NodeWorkers pLast) {
         this.pLast = pLast;
     }
 

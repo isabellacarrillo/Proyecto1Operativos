@@ -24,7 +24,6 @@ public class ProjectManager extends Worker {
         this.registerDayAccount = 0;
     }
 
-
    public void run() {
        
        while (working){
@@ -67,6 +66,7 @@ public class ProjectManager extends Worker {
            catch(Exception e){}
        }
    }
+  
  
     
     

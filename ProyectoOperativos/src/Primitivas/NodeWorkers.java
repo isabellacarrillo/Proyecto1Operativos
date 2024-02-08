@@ -4,25 +4,27 @@
  */
 package Primitivas;
 
+import Clases.Worker;
+
 /**
  *
  * @author Admin
  * @param <T>
  */
-public class Node<T>{
-    private T data;
-    private Node <T> pNext;
+public class NodeWorkers{
+    private Worker data;
+    private NodeWorkers  pNext;
 
 /**
  *
  * Constructors for the generic node 
  */    
-    public Node() {
+    public NodeWorkers() {
         this.data = null;
         this.pNext = null;
     }
 
-    public Node(T elem) {
+    public NodeWorkers(Worker elem) {
         this.data = elem;
         this.pNext = null;
     }
@@ -30,28 +32,28 @@ public class Node<T>{
     /**
      * @return the data
      */
-    public T getData() {
+    public Worker getData() {
         return data;
     }
 
     /**
      * @param data the data to set
      */
-    public void setData(T data) {
+    public void setData(Worker data) {
         this.data = data;
     }
 
     /**
      * @return the pNext
      */
-    public Node <T> getpNext() {
+    public NodeWorkers  getpNext() {
         return pNext;
     }
 
     /**
      * @param pNext the pNext to set
      */
-    public void setpNext(Node <T> pNext) {
+    public void setpNext(NodeWorkers  pNext) {
         this.pNext = pNext;
     }
     
