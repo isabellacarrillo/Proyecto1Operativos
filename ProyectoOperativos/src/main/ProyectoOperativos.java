@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package main;
+import Interfaces.DashBoard;
 import Interfaces.InterfazMain;
 /**
  *
@@ -15,7 +16,10 @@ public class ProyectoOperativos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        DashBoard gui = new DashBoard();
+        gui.setLocationRelativeTo(null);
+        gui.setVisible(true);
         
-    }
+}
     
 }
